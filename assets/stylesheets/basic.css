@@ -1,0 +1,94 @@
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(73, 73, 73);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* Center items vertically */
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    /* Add margin equal to the height of the footer */
+}
+
+.box {
+    width: 200px;
+    height: 150px;
+    /* Set a fixed height for equal-sized boxes */
+    margin: 20px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid darkred;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center items vertically */
+    transition: transform .25s;
+    /* Applies a smooth transform (scaling) transition on hover. */
+    border-radius: 5%;
+    /* Rounds the corners of social media icons. */
+    box-shadow: darkred 2px 2px 4px;
+    /* Adds a box shadow for a subtle 3D effect. */
+}
+
+/* Hover effect: Scale up social media icons on hover */
+.box:hover {
+    transform: scale(1.1);
+    /* Scales up the size of social media icons on hover. */
+}
+
+.box img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    /* Center the image horizontally */
+}
+
+.box h2 {
+    margin-top: 10px;
+    margin-bottom: 0%;
+    font-size: 1.2em;
+    color: black;
+}
+
+.container a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+a:link {
+    color: red;
+}
+
+a:link {
+    color: darkred;
+}
