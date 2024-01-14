@@ -12,5 +12,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: order.feuerwehr-sprendlingen.de
+        protocol: ftps-legacy
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASSWORD }}
